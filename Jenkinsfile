@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "resmasre/project"
+        IMAGE_NAME = "archita392/dev"
     }
 
     stages {
@@ -31,7 +31,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 sh '''
-                docker login -u resmasre -p Reshmasrep
+                docker login -u archita392/dev -p 1234567890
                 docker push $IMAGE_NAME
                 '''
             }
