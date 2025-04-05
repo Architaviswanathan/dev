@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: test
-        image: resmasre/project
+        image: archita392/dev
         imagePullPolicy: Always
         ports:
         - containerPort: 80
